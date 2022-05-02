@@ -1,11 +1,6 @@
 import { Injectable } from '@nestjs/common';
+import { Transaction } from '../interfaces/transaction.interface';
 import { AddTransactionDTO } from './dto/add-transaction.dto';
-
-interface Transaction {
-  payer: string;
-  points: number;
-  timestamp: string;
-}
 
 @Injectable()
 export class AccountsService {
@@ -15,5 +10,9 @@ export class AccountsService {
   }
   create(transaction: AddTransactionDTO) {
     this.transactions.push(transaction);
+  }
+
+  fetchAll() {
+    return this.transactions;
   }
 }
