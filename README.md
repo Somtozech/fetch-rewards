@@ -1,6 +1,10 @@
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+This is the Fetch Rewards Coding Exercise for Backend Software Engineering
+
+## Prerequisites
+
+Node v14 or higher - https://nodejs.org/en/download/
 
 ## Installation
 
