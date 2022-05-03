@@ -1,4 +1,3 @@
-import { AxiosError } from 'axios';
 import {
   ExceptionFilter,
   Catch,
@@ -6,7 +5,7 @@ import {
   HttpException,
   HttpStatus,
 } from '@nestjs/common';
-import { Request, Response } from 'express';
+import { Response } from 'express';
 
 @Catch()
 export class HttpExceptionFilter implements ExceptionFilter {
